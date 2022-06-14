@@ -1,20 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import QrcodeScanner from './Components/QrcodeScanner';
+import Menu from './Components/Menu';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <SafeAreaView style={styles.container}>
+        <Header />
+        <QrcodeScanner />
+      </SafeAreaView>
+    </PaperProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 30,
+    backgroundColor: '#fff'
   },
 });

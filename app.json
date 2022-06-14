@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "restaurantapp",
+    "name": "RNXG Id",
     "slug": "restaurantapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,6 +20,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "rnxg.rnxgid",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
